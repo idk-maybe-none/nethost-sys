@@ -114,7 +114,7 @@ pub fn download_nethost_from_nuget() -> Result<PathBuf, Box<dyn std::error::Erro
         (Os::Linux,   Arch::AArch64, Some(Env::Musl)) => "linux-musl-arm64",
         (Os::Linux,   Arch::X86_64,  _) => "linux-x64",
         (Os::Linux,   Arch::Arm,     _) => "linux-arm",
-        (Os::Android, Arch::AARCH64, _) => "linux-bionic-arm64",
+        (Os::Android, Arch::AArch64, _) => "linux-bionic-arm64",
         (Os::Linux,   Arch::AArch64, _) => "linux-arm64",
         (Os::MacOS,   Arch::X86_64,  _) => "osx-x64",
         (Os::MacOS,   Arch::AArch64, _) => "osx-arm64",
